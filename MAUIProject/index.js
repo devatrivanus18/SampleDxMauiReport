@@ -4,7 +4,7 @@ import "./style.css";
 
 window.JsFunctions = {
     _viewerOptions: {
-        reportUrl: ko.observable("SampleReport"),
+        reportUrl: ko.observable(namaReport),
         requestOptions: {
             host: "https://localhost:7261",
             invokeAction: "/DXXRDV"
@@ -17,20 +17,20 @@ window.JsFunctions = {
             getDesignerModelAction: "/DXXRD/GetReportDesignerModel"
         }
     },
-    _report1Options: {
-        reportUrl: ko.observable("Report1"),
-        requestOptions: {
-            host: "https://localhost:7261",
-            invokeAction: "/DXXRDV"
-        }
+    //_report1Options: {
+    //    reportUrl: ko.observable("Report1"),
+    //    requestOptions: {
+    //        host: "https://localhost:7261",
+    //        invokeAction: "/DXXRDV"
+    //    }
+    //},
+    InitWebDocumentViewer: function (elementId, namaReport) {
+        ko.applyBindings(this._viewerOptions, document.getElementById(elementId));
     },
-    InitWebDocumentViewer: function () {
-        ko.applyBindings(this._viewerOptions, document.getElementById("viewer"));
-    },
-    InitWebReport1Viewer: function () {
-        ko.applyBindings(this._report1Options, document.getElementById("report1"));
-    },
-    InitReportDesigner: function () {
+    //InitWebReport1Viewer: function () {
+    //    ko.applyBindings(this._report1Options, document.getElementById("report1"));
+    //},
+    InitReportDesigner: function (elementId) {
         ko.applyBindings(this._designerOptions, document.getElementById("designer"));
     },
     Dispose: function (elementId) {

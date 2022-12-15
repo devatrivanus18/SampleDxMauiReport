@@ -4,7 +4,7 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUIProject", "MAUIProject\MAUIProject.csproj", "{236D2E46-A8C1-4F61-ABF1-054F5E5F90EF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backend", "..\..\BlazorReporting .NET 6\Backend\Backend.csproj", "{1BC88D4C-C322-4A5A-9DA0-CCB27F4BFD87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backend", "..\BlazorReporting .NET 6\Backend\Backend.csproj", "{2FBA09C3-5AD6-44BD-9D07-377286C4C87B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,16 +18,16 @@ Global
 		{236D2E46-A8C1-4F61-ABF1-054F5E5F90EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{236D2E46-A8C1-4F61-ABF1-054F5E5F90EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{236D2E46-A8C1-4F61-ABF1-054F5E5F90EF}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{1BC88D4C-C322-4A5A-9DA0-CCB27F4BFD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1BC88D4C-C322-4A5A-9DA0-CCB27F4BFD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1BC88D4C-C322-4A5A-9DA0-CCB27F4BFD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1BC88D4C-C322-4A5A-9DA0-CCB27F4BFD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FBA09C3-5AD6-44BD-9D07-377286C4C87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBA09C3-5AD6-44BD-9D07-377286C4C87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBA09C3-5AD6-44BD-9D07-377286C4C87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBA09C3-5AD6-44BD-9D07-377286C4C87B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		        SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
 		SolutionGuid = {3D8CB7C2-35EB-4D89-A958-EFF8F9D60490}
+		        SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
 	EndGlobalSection
 EndGlobal
