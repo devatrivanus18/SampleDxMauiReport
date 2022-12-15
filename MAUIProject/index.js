@@ -4,7 +4,7 @@ import "./style.css";
 
 window.JsFunctions = {
     _viewerOptions: {
-        reportUrl: ko.observable(namaReport),
+        reportUrl: ko.observable("SampleReport"),
         requestOptions: {
             host: "https://localhost:7261",
             invokeAction: "/DXXRDV"
@@ -31,7 +31,7 @@ window.JsFunctions = {
     //    ko.applyBindings(this._report1Options, document.getElementById("report1"));
     //},
     InitReportDesigner: function (elementId) {
-        ko.applyBindings(this._designerOptions, document.getElementById("designer"));
+        ko.applyBindings(this._designerOptions, document.getElementById(elementId));
     },
     Dispose: function (elementId) {
         var element = document.getElementById(elementId);
