@@ -7,7 +7,7 @@
 @code {
     protected override void OnAfterRender(bool firstRender)
     {
-        JSRuntime.InvokeAsync<string>("JsFunctions.InitWebDocumentViewer", "sample");
+        JSRuntime.InvokeAsync<string>("JsFunctions.InitWebDocumentViewer", "sample", "");
     }
 
     public void Dispose()

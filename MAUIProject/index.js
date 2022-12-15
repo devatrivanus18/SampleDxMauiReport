@@ -1,10 +1,10 @@
 ﻿var ko = require('knockout');
 require('devexpress-reporting/dx-reportdesigner');
 import "./style.css";
-
+var rpt = "";
 window.JsFunctions = {
     _viewerOptions: {
-        reportUrl: ko.observable("SampleReport"),
+        reportUrl: ko.observable(rpt),
         requestOptions: {
             host: "https://localhost:7261",
             invokeAction: "/DXXRDV"
@@ -25,12 +25,15 @@ window.JsFunctions = {
     //    }
     //},
     InitWebDocumentViewer: function (elementId, namaReport) {
+        rpt = namaReport;
+        console.log(rpt);
         ko.applyBindings(this._viewerOptions, document.getElementById(elementId));
     },
     //InitWebReport1Viewer: function () {
     //    ko.applyBindings(this._report1Options, document.getElementById("report1"));
     //},
     InitReportDesigner: function (elementId) {
+        console.log(elementId);
         ko.applyBindings(this._designerOptions, document.getElementById(elementId));
     },
     Dispose: function (elementId) {
