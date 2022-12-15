@@ -1,10 +1,9 @@
 ﻿var ko = require('knockout');
 require('devexpress-reporting/dx-reportdesigner');
 import "./style.css";
-var rpt = "";
 window.JsFunctions = {
     _viewerOptions: {
-        reportUrl: ko.observable(rpt),
+        reportUrl: "",
         requestOptions: {
             host: "https://localhost:7261",
             invokeAction: "/DXXRDV"
@@ -25,8 +24,8 @@ window.JsFunctions = {
     //    }
     //},
     InitWebDocumentViewer: function (elementId, namaReport) {
-        rpt = namaReport;
-        console.log(rpt);
+        this._viewerOptions.reportUrl = namaReport;
+        console.log(this._viewerOptions.reportUrl);
         ko.applyBindings(this._viewerOptions, document.getElementById(elementId));
     },
     //InitWebReport1Viewer: function () {
