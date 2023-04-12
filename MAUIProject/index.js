@@ -5,14 +5,14 @@ window.JsFunctions = {
     _viewerOptions: {
         reportUrl: "",
         requestOptions: {
-            host: "https://fctestreport.azurewebsites.net/",
+            host: "https://localhost:7261",
             invokeAction: "/DXXRDV"
         }
     },
     _designerOptions: {        
         reportUrl: ko.observable("SampleReport"),
         requestOptions: {
-            host: "https://fctestreport.azurewebsites.net/",
+            host: "https://localhost:7261",
             getDesignerModelAction: "/DXXRD/GetReportDesignerModel"
         }
     },
